@@ -1,35 +1,35 @@
 // Close the dropdown if the user clicks outside of it
 window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
+    if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+            }
+        }
     }
-  }
 }
 
 /* Count up for GREEEN CURRENT PLEDGES */
-for (i=0;i <= 1423;i++){
+for (i = 0; i <= 1423; i++) {
     (function(i) {
-        setTimeout(function(){
-           document.getElementById("counter").innerHTML = i.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");;
+        setTimeout(function() {
+            document.getElementById("counter").innerHTML = i.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");;
         }, i * 2);
     })(i);
 }
 
 /* Sets Each district for PLEDGES / Animation */
-function pledgeAmount(pledges, district, pledgesNumber) { 
-    for (i=0;i <= pledges;i++){
+function pledgeAmount(pledges, district, pledgesNumber) {
+    for (i = 0; i <= pledges; i++) {
         (function(i) {
-            setTimeout(function(){
+            setTimeout(function() {
                 // 45 because width of space 
                 var districtWidth = i / 129 * 45;
 
-                 /* Sets Each district width for PLEDGES */
+                /* Sets Each district width for PLEDGES */
                 document.getElementById(district).style.width = districtWidth + '%';
 
                 /* Count up for PLEDGES */

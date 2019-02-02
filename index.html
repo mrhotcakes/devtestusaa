@@ -1,111 +1,148 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <title>Pledges Review</title>
     <meta name="description" content="Data gathered from pledging in districts">
     <meta name="author" content="USAA">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <!-- CSS STYLE SHEETS -->
     <link rel="stylesheet" href="css/devtest.css?v=1.0">
-
     <!-- JAVASCRIPTS -->
     <script src="js/devtest.js?v=1.0"></script>
-
     <!-- GOOGLE FONT OPEN SANS -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-
 </head>
+
 <body>
-<!-- Navigation -->
-<nav class="nav-container">
-    <div class="logo">Logo</div>
-    <a class="mobile-toggle" onclick="activateNavigation(this)">
+    <!-- Navigation -->
+    <nav class="nav-container">
+        <div class="logo">Logo</div>
+        <a class="mobile-toggle" onclick="activateNavigation(this)">
         <div class="bar1"></div>
         <div class="bar2"></div>
         <div class="bar3"></div>
     </a>
-    <ul id="navigation" role="navigation" aria-label="Main Menu">
-        <li class="nav-link"><a href="#">Generic Text</a></li>
-        <li class="nav-link"><a href="#">Generic Schedule</a></li>
-        <li class="nav-link"><a href="#">FAQ</a></li>
-    </ul>
-</nav>
-<!-- / Navigation -->
-<!-- Top Portion of Page -->
-<section class="top-block">
-    <div class="row">
-        <h1>
+        <ul id="navigation" role="navigation" aria-label="Main Menu">
+            <li class="nav-link"><a href="#">Generic Text</a></li>
+            <li class="nav-link"><a href="#">Generic Schedule</a></li>
+            <li class="nav-link"><a href="#">FAQ</a></li>
+        </ul>
+    </nav>
+    <!-- / Navigation -->
+    <!-- Top Portion of Page -->
+    <section class="top-block">
+        <div class="row">
+            <h1>
             Text <b>Everyday, Everything, Everywhere</b><br>
             and your generic text <b>fully-funded Text</b>
         </h1>
-    </div>
-    <div class="row">
-        <form id="formSignUp" class="form-sign-up">
-            <input type="email" name="email" id="email-input" placeholder="Email address">
-             <select name="" id="radiusSelect">
-                <option selected="selected">Select Your District</option>
-                <option value="bexar">Bexar</option>
-                <option value="midtown">Midtown</option>
-                <option value="southtown">Southtown</option>
-            </select>
-            <span class="checkbox-updates"><input type="checkbox" name="vehicle" value="Bike"> I'd like to recieve updates from Generic Text about this program</span>
-             <input type="submit" value="Go" class="form-submit-btn">
-        </form> 
-    </div>
-</section>
-<!-- /Top Portion of Page -->
-
-<!-- Bottom Portion of Page -->
-<section class="bottom-block">
-    <div class="content-block-left">
-        <h2>There are currently</h2>
-        <div id="counter">1,423</div>
-        <h2>Pledges from the 10 <br> Districts of City, ST</h2>
-    </div>
-    <div class="content-block-divider"><img src="images/recycle-circle.png"></div>
-    <div class="content-block-right">
-        <!-- District Progress -->
-        <div class="graph">
-            <h3>LeaderBoard</h3>
-            <div class="row">
-                <div class="label"><p>District 1</p></div><div id="district1" class="district"></div><div id="pledges-number1" class="pledge-number"></div>
-            </div>
-            <div class="row">
-                <div class="label"><p>District 2</p></div><div id="district2" class="district"></div><div id="pledges-number2" class="pledge-number"></div>
-            </div>
-            <div class="row">
-                <div class="label"><p>District 3</p></div><div id="district3" class="district"></div><div id="pledges-number3" class="pledge-number"></div>
-            </div>
-            <div class="row">
-                <div class="label"><p>District 4</p></div><div id="district4" class="district"></div><div id="pledges-number4" class="pledge-number"></div>
-            </div>
-            <div class="row">
-                <div class="label"><p>District 5</p></div><div id="district5" class="district"></div><div id="pledges-number5" class="pledge-number"></div>
-            </div>
-            <div class="row">
-                <div class="label"><p>District 6</p></div><div id="district6" class="district"></div><div id="pledges-number6" class="pledge-number"></div>
-            </div>
-            <div class="row">
-                <div class="label"><p>District 7</p></div><div id="district7" class="district"></div><div id="pledges-number7" class="pledge-number"></div>
-            </div>
-            <div class="row">
-                <div class="label"><p>District 8</p></div><div id="district8" class="district"></div><div id="pledges-number8" class="pledge-number"></div>
-            </div>
-            <div class="row">
-                <div class="label"><p>District 9</p></div><div id="district9" class="district"></div><span id="pledges-number9" class="pledge-number"></span>
-            </div>
-            <div class="row">
-                <div class="label"><p>District 10</p></div><div id="district10" class="district"></div><div id="pledges-number10" class="pledge-number"></div>
-        </div></di
-        v>
-        <!-- / District Progress -->
-    </div>
-</section>
-<!-- / Bottom Portion of Page -->
-<footer>
-    <p>&copy;2019 Generic Text</p>
-</footer>
+        </div>
+        <div class="row">
+            <form id="formSignUp" class="form-sign-up">
+                <input type="email" name="email" id="email-input" placeholder="Email address">
+                <select name="" id="radiusSelect">
+                    <option selected="selected">Select Your District</option>
+                    <option value="bexar">Bexar</option>
+                    <option value="midtown">Midtown</option>
+                    <option value="southtown">Southtown</option>
+                </select>
+                <span class="checkbox-updates"><input type="checkbox" name="vehicle" value="Bike"> I'd like to recieve updates from Generic Text about this program</span>
+                <input type="submit" value="Go" class="form-submit-btn">
+            </form>
+        </div>
+    </section>
+    <!-- /Top Portion of Page -->
+    <!-- Bottom Portion of Page -->
+    <section class="bottom-block">
+        <div class="content-block-left">
+            <h2>There are currently</h2>
+            <div id="counter">1,423</div>
+            <h2>Pledges from the 10 <br> Districts of City, ST</h2>
+        </div>
+        <div class="content-block-divider"><img src="images/recycle-circle.png"></div>
+            <div class="content-block-right">
+                <!-- District Progress -->
+                <div class="graph">
+                    <h3>LeaderBoard</h3>
+                    <div class="row">
+                        <div class="label">
+                            <p>District 1</p>
+                        </div>
+                        <div id="district1" class="district"></div>
+                        <div id="pledges-number1" class="pledge-number"></div>
+                    </div>
+                    <div class="row">
+                        <div class="label">
+                            <p>District 2</p>
+                        </div>
+                        <div id="district2" class="district"></div>
+                        <div id="pledges-number2" class="pledge-number"></div>
+                    </div>
+                    <div class="row">
+                        <div class="label">
+                            <p>District 3</p>
+                        </div>
+                        <div id="district3" class="district"></div>
+                        <div id="pledges-number3" class="pledge-number"></div>
+                    </div>
+                    <div class="row">
+                        <div class="label">
+                            <p>District 4</p>
+                        </div>
+                        <div id="district4" class="district"></div>
+                        <div id="pledges-number4" class="pledge-number"></div>
+                    </div>
+                    <div class="row">
+                        <div class="label">
+                            <p>District 5</p>
+                        </div>
+                        <div id="district5" class="district"></div>
+                        <div id="pledges-number5" class="pledge-number"></div>
+                    </div>
+                    <div class="row">
+                        <div class="label">
+                            <p>District 6</p>
+                        </div>
+                        <div id="district6" class="district"></div>
+                        <div id="pledges-number6" class="pledge-number"></div>
+                    </div>
+                    <div class="row">
+                        <div class="label">
+                            <p>District 7</p>
+                        </div>
+                        <div id="district7" class="district"></div>
+                        <div id="pledges-number7" class="pledge-number"></div>
+                    </div>
+                    <div class="row">
+                        <div class="label">
+                            <p>District 8</p>
+                        </div>
+                        <div id="district8" class="district"></div>
+                        <div id="pledges-number8" class="pledge-number"></div>
+                    </div>
+                    <div class="row">
+                        <div class="label">
+                            <p>District 9</p>
+                        </div>
+                        <div id="district9" class="district"></div><span id="pledges-number9" class="pledge-number"></span>
+                    </div>
+                    <div class="row">
+                        <div class="label">
+                            <p>District 10</p>
+                        </div>
+                        <div id="district10" class="district"></div>
+                        <div id="pledges-number10" class="pledge-number"></div>
+                    </div>
+                    </di v>
+                    <!-- / District Progress -->
+                </div>
+    </section>
+    <!-- / Bottom Portion of Page -->
+    <footer>
+        <p>&copy;2019 Generic Text</p>
+    </footer>
 </body>
+
 </html>
